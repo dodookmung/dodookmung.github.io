@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "MS Sans Serif", sans-serif;
+    background-color: #008080;
+}
+
+/* 윈도우 작업표시줄   windows taskbar */
+.taskbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #C0C0C0;
+    border-top: 2px solid #ffffff;
+}
+
+.taskbar-line {
+    margin: 0 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #C0C0C0;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    cursor: default;
+}
+
+
+.home-button {
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+    padding: 0 10px;
+    height: 35px;
+    background-color: #C0C0C0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    box-shadow: inset -1px -1px 0px #a0a0a0;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* background-image = 스프레이 패턴.  cliked spary pattern*/
+.taskbar-about-button {
+    margin: 0 5px;
+    padding: 0 10px;
+    padding-right: 20px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: #C0C0C0;
+    background-image:
+        linear-gradient(0deg, #eaeaea 50%, transparent 50%),
+        linear-gradient(90deg, #eaeaea 50%, transparent 50%);
+    background-size: 2px 2px;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000; 
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    box-shadow: inset -1px -1px 0px #a0a0a0, inset 1px 1px 0px #a0a0a0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.taskbar-photos-button {
+    margin: 0 5px;
+    padding: 0 5px;
+    padding-right: 20px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: #C0C0C0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    box-shadow: inset -1px -1px 0px #a0a0a0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.taskbar-items {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 1px;
+}
+
+.taskbar-item {
+    margin: 0 3px;
+    padding: 0 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #C0C0C0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    box-shadow: inset -1px -1px 0px #a0a0a0;
+    cursor: default;
+}
+
+.taskbar-search-button {
+    margin-right: 10px;
+    padding: 0 10px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    background-color: #C0C0C0;
+    border-top: 2px solid #404040;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #404040;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.home-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+
+.taskbar-about-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.taskbar-photos-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.taskbar-search-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+/* 바탕화면 아이콘    wallpaper desktop icon */
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.about-icon {
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* 세로로 배치합니다. */
+    align-items: center;
+    cursor: pointer;
+}
+
+.photos-icon {
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* 세로로 배치합니다. */
+    align-items: center;
+    cursor: pointer;
+}
+
+.about-icon img {
+    width: 60px; /* 이미지의 너비를 조절합니다. */
+    height: auto; /* 이미지의 높이를 자동으로 설정합니다. */
+}
+
+.photos-icon img {
+    width: 60px; /* 이미지의 너비를 조절합니다. */
+    height: auto; /* 이미지의 높이를 자동으로 설정합니다. */
+}
+
+.about-icon p {
+    margin: 10px 0 0; /* 텍스트와 이미지 사이의 간격을 조절합니다. */
+    color: #ffffff;
+}
+
+.photos-icon p {
+    margin: 10px 0 0; /* 텍스트와 이미지 사이의 간격을 조절합니다. */
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+/* Application 창  */
+.app-container {
+    padding: 0 3px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+    height: 400px;
+
+    background-color: #C0C0C0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    box-shadow: inset 3px 3px 0px #C0C0C0, inset -3px -3px 0px #C0C0C0;
+}
+
+.app-top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    
+    background-color: #C0C0C0;
+    box-shadow: inset 0px 2px 0px #808080;
+}
+
+.app-menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 28px;
+    
+    background-image: linear-gradient(to right, #010A86, #0F7BCB);
+    box-shadow: inset 0px 3px 0px #C0C0C0, inset 0px -3px 0px #C0C0C0;
+}
+
+.app-addr-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 32px;
+    
+    background-color: #C0C0C0;
+    box-shadow: inset 1px 1px 0px #808080, inset -1px -1px 0px #808080;;
+}
+
+.app-about-icon {
+    display: flex;
+    align-items: center;
+}
+
+.app-close-btn {
+    margin-right: 3px;
+    height: 13px;
+    width: 13px;
+    display: flex;
+    align-items: center;
+
+
+    background-color: #C0C0C0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    cursor: pointer;
+}
+
+.app-addr-bar-line {
+    margin: 0 5px;
+    width: 2px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+
+    background-color: #C0C0C0;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;
+    cursor: default;
+}
+
+.app-addr-bar-dir-box {
+    margin-left: 50px;
+    margin-right: 3px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+
+    background-color: #ffffff;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    box-shadow: inset 1px 1px 0px #C0C0C0, inset -1px -1px 0px #C0C0C0;
+    cursor: default;
+}
+
+.app-addr-bar-dir-box-icon {
+    display: flex;
+    align-items: center;
+}
+
+.app-addr-bar-dir-box-btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 8px;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: #C0C0C0;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    cursor: default;
+}
+
+.app-about-main {
+    display: flex;
+    align-items: center;
+    
+    width: auto;
+    height: 76%;
+    
+    background-color: #ffffff;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    box-shadow: inset 1px 1px 0px #C0C0C0, inset -1px -1px 0px #C0C0C0;
+}
+
+.app-bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 4px;
+    height: 20px;
+}
+
+.app-bottom-bar1 {
+    display: flex;
+    align-items: center;
+
+    width: 25%;
+    height: 100%;
+    
+    background-color: #C0C0C0;
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.app-bottom-bar2 {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+    
+    background-color: #C0C0C0;
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.app-bottom-bar3 {
+    display: flex;
+    align-items: center;
+
+    width: 23%;
+    height: 100%;
+    
+    background-color: #C0C0C0;
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.app-about-icon img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 3px;
+    
+}
+
+.app-close-btn img{
+    width: 10px;
+    height: 10px;
+    margin: auto;
+}
+
+.app-addr-bar-dir-box-icon img{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 1px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+    margin-left: 3px;
+}
+
+.app-addr-bar-dir-box-btn img {
+    width: 13px;
+    height: 13px;
+    margin: auto;
+}
+
+.app-bottom-bar3 img {
+    width: 18px;
+    height: 18px;
+}
+
+
+.app-about-icon p {
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #ffffff;
+}
+
+.app-addr-bar-line p {
+    font-size: 12px;
+    margin-left: 7px;
+}
+
+.app-addr-bar-dir-box-icon p{
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.app-bottom-bar1 p {
+    font-size: 12px;
+}
+
+.app-bottom-bar3 p {
+    font-size: 12px;
+    margin-left: 3px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=np">
+        <title>도둑멍</title>
+        <link rel="icon" href="imgs/logo_mk1.ico">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <noscript>
+            You need to enable JavaScript to run this app
+        </noscript>
+        <div id="root">
+        </div>
+
+        <div class="taskbar">  
+            <button class="home-button" onclick="location.href='index.html'">
+                <img src="./imgs/start-button-icon.png" alt="Home">
+                <p>Home</p>
+            </button>
+            <div class="taskbar-line"></div>
+
+            <div class="taskbar-items">
+                <button class="taskbar-about-button" onclick="location.href='about.html'">
+                    <img src="./imgs/hard_disk_drive-0.png" alt="About">
+                    <p>About</p>
+                </button>
+                <button class="taskbar-photos-button" onclick="location.href='about.html'">
+                    <img src="./imgs/ie-icon.png" alt="Photos">
+                    <p>Photos</p>
+                </button>
+                
+                <div class="taskbar-item">Art</div>
+                <div class="taskbar-item">Writing</div>
+            </div>
+            <div class="taskbar-search-button">
+                <img src="./imgs/magnifying_glass_4.png" alt="Search">
+                Search
+            </div>
+        </div>
+
+
+
+        <div class="desktop-icon">
+            <div class="about-icon"  onclick="location.href='about.html'">
+                <img src="./imgs/computer_explorer.png" alt="About">
+                <p>About</p>
+            </div>
+            <div class="photos-icon" onclick="location.href='about.html'">
+                <img src="./imgs/gram.png" alt="Photos">
+                <p>Photos</p>
+            </div>
+        </div>
+
+        
+        
+        <div class="desktop-logo">
+            <img src="./imgs/desktop-logo.png">
+        </div>
+        
+
+
+
+
+
+
+
+
+        <script>
+            // Function to change the CSS of the div on mousedown
+            function changeDivStyleOnMouseDown() {
+                const div = document.getElementById('windowCloseBtn');
+                div.style.borderTop = "2px solid #000000";
+                div.style.borderLeft = "2px solid #000000";
+                div.style.borderBottom = "2px solid #ffffff";
+                div.style.borderRight = "2px solid #ffffff";
+            }
+    
+            // Function to revert the CSS of the div on mouseup
+            function revertDivStyleOnMouseUp() {
+                const div = document.getElementById('windowCloseBtn');
+                div.style.borderTop = "2px solid #ffffff";
+                div.style.borderLeft = "2px solid #ffffff";
+                div.style.borderBottom = "2px solid #000000";
+                div.style.borderRight = "2px solid #000000";
+            }
+    
+            // Add event listeners to the div
+            const div = document.getElementById('windowCloseBtn');
+            div.addEventListener('mousedown', changeDivStyleOnMouseDown);
+            div.addEventListener('mouseup', revertDivStyleOnMouseUp);
+    
+            // Optional: Also revert the style if the mouse leaves the div while holding down the click
+            div.addEventListener('mouseleave', revertDivStyleOnMouseUp);
+        </script>
+        
+    </body>
+</html>
