@@ -338,9 +338,11 @@ body {
     cursor: default;
 }
 
+/* app-main */
 .app-about-main {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
     
     width: auto;
     height: 76%;
@@ -351,6 +353,35 @@ body {
     border-bottom: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
     box-shadow: inset 1px 1px 0px #C0C0C0, inset -1px -1px 0px #C0C0C0;
+}
+
+/* about 정보 테이블 info table */
+.infobox {
+    display: flex;
+    width: 60%;
+
+    border: 2px solid #c60000;
+    border-collapse: collapse;
+}
+
+.infobox th, .infobox td {
+    border: 1px solid #C0C0C0;
+    background-color: #f9f9f9;
+}
+.infobox .top td {
+    text-align: center;
+    background-color: #c60000; /* 배경 색상 */
+    font-weight: bold; /* 글자 굵기 */
+    font-size: 18px;
+    color: #ffffff; /* 글자 색상 */
+}
+.infobox .header{
+    width: 20%;
+
+    text-align: center;
+    background-color: #c60000; /* 배경 색상 */
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .app-bottom-container {
@@ -403,6 +434,8 @@ body {
     border-bottom: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
 }
+
+
 
 .app-about-icon img {
     width: 25px;
@@ -466,3 +499,4 @@ body {
     font-size: 12px;
     margin-left: 3px;
 }
+
