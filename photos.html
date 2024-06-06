@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=np">
         <title>도둑멍</title>
         <link rel="icon" href="imgs/logo_mk1.ico">
-        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./photos.css">
     </head>
     <body>
         <noscript>
@@ -55,14 +55,80 @@
 
         
         
-        <div class="desktop-logo">
-            <img src="./imgs/desktop-logo.png">
+
+
+
+        <div class="app-container">
+            <div class="app-top-bar">
+                <div class="app-menu-bar">
+                    <div class="app-photos-icon">
+                        <img src="./imgs/gram.png">
+                        <p>Instagram.exe</p>
+                    </div>
+                    <div class="app-close-btn" id="appCloseBtn">
+                        <img src="./imgs/close-icon.png">
+                    </div>
+                </div>
+
+                <div class="app-file-menu-bar">
+                    <div class="app-file-menu-line">
+                    </div>
+                    <div class="app-file-menu-frame">
+                        <p>File</p>
+                        <p>Edit</p>
+                        <p>View</p>
+                        <p>Go</p>
+                        <p>Favorites</p>
+                        <p>Tools</p>
+                        <p>Help</p>
+                    </div>
+                </div>
+            </div>
+            <div class="app-user-name-bar">
+                <p>dodookmung</p>
+            </div>
+            <div class="app-profile-container">
+                <div class="app-profile-image">
+                    <img src="./imgs/gram-profile.jpeg">
+                </div>
+                <div class="app-profile-info-container">
+                    <div class="app-profile-info-text-contrainer">
+                        <div class="app-profile-info-text-posts">
+                            <p>3</p>
+                            <p>posts</p>
+                        </div>
+                        <div class="app-profile-info-text-followers">
+                            <p>32</p>
+                            <p>followers</p>
+                        </div>
+                        <div class="profile-info-text-following">
+                            <p>37</p>
+                            <p>following</p>
+                        </div>
+                    </div>
+                    <div class="app-profile-info-btn-contrainer">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-about-main">
+                <h2>도둑멍 그는 누구인가?</h1>
+                <br>
+
+            </div>
+            <div class="app-bottom-container">
+                <div class="app-bottom-bar1">
+                    <p>few object(s)</p>
+                </div>
+                <div class="app-bottom-bar2"></div>
+                <div class="app-bottom-bar3">
+                    <img src="./imgs/computer_explorer.png">
+                    <p>Your Computer</p>
+                </div>
+            </div>
+            
         </div>
-        
-
-
-
-
 
 
 
@@ -70,7 +136,7 @@
         <script>
             // Function to change the CSS of the div on mousedown
             function changeDivStyleOnMouseDown() {
-                const div = document.getElementById('windowCloseBtn');
+                const div = document.getElementById('appCloseBtn');
                 div.style.borderTop = "2px solid #000000";
                 div.style.borderLeft = "2px solid #000000";
                 div.style.borderBottom = "2px solid #ffffff";
@@ -79,15 +145,17 @@
     
             // Function to revert the CSS of the div on mouseup
             function revertDivStyleOnMouseUp() {
-                const div = document.getElementById('windowCloseBtn');
+                const div = document.getElementById('appCloseBtn');
                 div.style.borderTop = "2px solid #ffffff";
                 div.style.borderLeft = "2px solid #ffffff";
                 div.style.borderBottom = "2px solid #000000";
                 div.style.borderRight = "2px solid #000000";
+
+                /*location.href="./index.html";*/
             }
     
             // Add event listeners to the div
-            const div = document.getElementById('windowCloseBtn');
+            const div = document.getElementById('appCloseBtn');
             div.addEventListener('mousedown', changeDivStyleOnMouseDown);
             div.addEventListener('mouseup', revertDivStyleOnMouseUp);
     
