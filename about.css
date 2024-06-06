@@ -376,12 +376,16 @@ body {
     color: #ffffff; /* 글자 색상 */
 }
 .infobox .header{
-    width: 20%;
+    width: 30%;
 
     text-align: center;
     background-color: #c60000; /* 배경 색상 */
     font-weight: bold;
     color: #ffffff;
+}
+
+.infobox .value{
+    width: 100%;
 }
 
 .app-bottom-container {
