@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* 화면 전체 높이, 너비 조절이 필요하면 설정 */
+  display: flex;
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center;     /* 세로 가운데 정렬 */
+
+  background-color: #1f1f1f;
+}
+
+.container {
+  width: 1200px;  /* 원하는 너비 */
+  background: #474747;
+  padding: 20px;
+  box-sizing: border-box;
+
+  color: white;  /* 전체 폰트 컬러 하얀색 */
+}
+
+.post-box {
+  width: 800;  /* 원하는 너비 */
+  background: #757575;
+  margin-top: 50px;
+  padding: 50px;
+  box-sizing: border-box;
+
+  color: black;  /* 전체 폰트 컬러 하얀색 */
+}
+
+.post-content {
+  width: 800;  /* 원하는 너비 */
+  background: #757575;
+  padding: 50px;
+  box-sizing: border-box;
+
+  color: black;  /* 전체 폰트 컬러 하얀색 */
+
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.center-text {
+  text-align: center;
+}
+
