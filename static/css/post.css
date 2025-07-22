@@ -49,3 +49,23 @@ a {
   text-align: center;
 }
 
+/* 반응형 레이아웃 추가 */
+@media (max-width: 600px) {
+  .container {
+    width: 100vw;
+    padding: 10px;
+  }
+  .post-box,
+  .post-content {
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+  iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
