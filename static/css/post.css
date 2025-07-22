@@ -49,6 +49,12 @@ a {
   text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
 /* 반응형 레이아웃 추가 */
 @media (max-width: 600px) {
   .container {
